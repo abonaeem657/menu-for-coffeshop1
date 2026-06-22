@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)http://localhost/Plastine%20Coffee%20House_files/project.php -->
-<html lang="ar"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<meta content="width=device-width, initial-scale=1">
-<title>Plastine Coffee House</title>
-<link rel="stylesheet" href="./Plastine Coffee House_files/CSS.css">
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastine Coffee House</title>
+    
+    <!-- ربط CSS مباشرة من الجذر -->
+    <link rel="stylesheet" href="/CSS.css">
 </head>
 <body>
 
@@ -15,55 +17,53 @@
 <p id="menu">Menu</p>
 
 <ul>
-    <li><a href="http://localhost/Plastine%20Coffee%20House_files/project.php#cookies">Cookies</a></li>
-    <li><a href="http://localhost/Plastine%20Coffee%20House_files/project.php#drink">Drink</a>
-    <a href="http://localhost/Plastine%20Coffee%20House_files/project.php#cake">Cake</a></li>
+    <li><a href="#cookies">Cookies</a></li>
+    <li><a href="#drink">Drink</a></li>
+    <li><a href="#cake">Cake</a></li>
 </ul> 
-
 
 <div class="drink-section" id="drink">
     <h2>Drink</h2>
     <ul>
         <li>
-            <button onclick="toggleList(&#39;hot&#39;)">Hot Drink</button>
+            <button onclick="toggleList('hot')">Hot Drink</button>
             <ul id="hot" class="drink-list">
-                                    <li>Espresso - $2.50</li>
-                                    <li>Cappuccino - $3.00</li>
-                                    <li>Latte - $3.50</li>
-                                    <li>Hot Chocolate - $2.80</li>
-                            </ul>
+                <li>Espresso - $2.50</li>
+                <li>Cappuccino - $3.00</li>
+                <li>Latte - $3.50</li>
+                <li>Hot Chocolate - $2.80</li>
+            </ul>
         </li>
         <li>
-            <button onclick="toggleList(&#39;cold&#39;)">Cold Drink</button>
+            <button onclick="toggleList('cold')">Cold Drink</button>
             <ul id="cold" class="drink-list">
-                                    <li>Iced Coffee - $3.00</li>
-                                    <li>Lemon Iced Tea - $2.50</li>
-                                    <li>Mango Smoothie - $3.80</li>
-                                    <li>Cold Brew - $3.20</li>
-                            </ul>
+                <li>Iced Coffee - $3.00</li>
+                <li>Lemon Iced Tea - $2.50</li>
+                <li>Mango Smoothie - $3.80</li>
+                <li>Cold Brew - $3.20</li>
+            </ul>
         </li>
     </ul>
 </div>
-
 
 <div class="drink-section" id="cake">
     <h2>Cake</h2>
     <ul>
         <li>
-            <button onclick="toggleList(&#39;chocoCake&#39;)">Chocolate Cakes</button>
+            <button onclick="toggleList('chocoCake')">Chocolate Cakes</button>
             <ul id="chocoCake" class="drink-list">
-                                    <li>Dark Chocolate Cake - $4.00</li>
-                                    <li>Chocolate Fudge - $4.50</li>
-                                    <li>Chocolate Mousse - $4.80</li>
-                            </ul>
+                <li>Dark Chocolate Cake - $4.00</li>
+                <li>Chocolate Fudge - $4.50</li>
+                <li>Chocolate Mousse - $4.80</li>
+            </ul>
         </li>
         <li>
-            <button onclick="toggleList(&#39;fruitCake&#39;)">Fruit Cakes</button>
+            <button onclick="toggleList('fruitCake')">Fruit Cakes</button>
             <ul id="fruitCake" class="drink-list">
-                                    <li>Strawberry Cake - $4.20</li>
-                                    <li>Mango Cake - $4.30</li>
-                                    <li>Mixed Fruit Tart - $4.50</li>
-                            </ul>
+                <li>Strawberry Cake - $4.20</li>
+                <li>Mango Cake - $4.30</li>
+                <li>Mixed Fruit Tart - $4.50</li>
+            </ul>
         </li>
     </ul>
 </div>
@@ -72,20 +72,20 @@
     <h2>Cookies</h2>
     <ul>
         <li>
-            <button onclick="toggleList(&#39;chocoCookie&#39;)">Chocolate Cookies</button>
+            <button onclick="toggleList('chocoCookie')">Chocolate Cookies</button>
             <ul id="chocoCookie" class="drink-list">
-                                    <li>Chocolate Chip - $3.00</li>
-                                    <li>Double Chocolate - $3.50</li>
-                                    <li>Chocolate Walnut - $3.80</li>
-                            </ul>
+                <li>Chocolate Chip - $3.00</li>
+                <li>Double Chocolate - $3.50</li>
+                <li>Chocolate Walnut - $3.80</li>
+            </ul>
         </li>
         <li>
-            <button onclick="toggleList(&#39;classicCookie&#39;)">Classic Cookies</button>
+            <button onclick="toggleList('classicCookie')">Classic Cookies</button>
             <ul id="classicCookie" class="drink-list">
-                                    <li>Oatmeal Raisin - $2.50</li>
-                                    <li>Peanut Butter - $2.50</li>
-                                    <li>Sugar Cookie - $2.20</li>
-                            </ul>
+                <li>Oatmeal Raisin - $2.50</li>
+                <li>Peanut Butter - $2.50</li>
+                <li>Sugar Cookie - $2.20</li>
+            </ul>
         </li>
     </ul>
 </div>
@@ -93,7 +93,11 @@
 <script>
     function toggleList(id) {
         const list = document.getElementById(id);
-        list.style.display = (list.style.display === "block") ? "none" : "block";
+        if (list.style.display === "block") {
+            list.style.display = "none";
+        } else {
+            list.style.display = "block";
+        }
     }
 </script>
 
@@ -102,6 +106,5 @@
     AND ALWAYS THINK OF THE INNOCENT CHILDREN
 </h2>
 
-
-
-</body></html>
+</body>
+</html>
