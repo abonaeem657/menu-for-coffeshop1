@@ -1,108 +1,29 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plastine Coffee House</title>
-    <link rel="stylesheet" href="CSS.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#241b17">
+  <meta name="description" content="Explore coffee, cakes and cookies at Plastine Coffee House.">
+  <title>Menu | Plastine Coffee House</title><link rel="stylesheet" href="CSS.css">
 </head>
 <body>
-
-<h1 id="start">Plastine Coffee House</h1>
-
-<h2 id="ccc">We have all things you need to enjoy with us</h2>
-
-<p id="menu">Menu</p>
-
-<ul>
-    <li><a href="#cookies">Cookies</a></li>
-    <li><a href="#drink">Drink</a></li>
-    <li><a href="#cake">Cake</a></li>
-</ul> 
-
-<div class="drink-section" id="drink">
-    <h2>Drink</h2>
-    <ul>
-        <li>
-            <button onclick="toggleList('hot')">Hot Drink</button>
-            <ul id="hot" class="drink-list">
-                <li>Espresso - $2.50</li>
-                <li>Cappuccino - $3.00</li>
-                <li>Latte - $3.50</li>
-                <li>Hot Chocolate - $2.80</li>
-            </ul>
-        </li>
-        <li>
-            <button onclick="toggleList('cold')">Cold Drink</button>
-            <ul id="cold" class="drink-list">
-                <li>Iced Coffee - $3.00</li>
-                <li>Lemon Iced Tea - $2.50</li>
-                <li>Mango Smoothie - $3.80</li>
-                <li>Cold Brew - $3.20</li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<div class="drink-section" id="cake">
-    <h2>Cake</h2>
-    <ul>
-        <li>
-            <button onclick="toggleList('chocoCake')">Chocolate Cakes</button>
-            <ul id="chocoCake" class="drink-list">
-                <li>Dark Chocolate Cake - $4.00</li>
-                <li>Chocolate Fudge - $4.50</li>
-                <li>Chocolate Mousse - $4.80</li>
-            </ul>
-        </li>
-        <li>
-            <button onclick="toggleList('fruitCake')">Fruit Cakes</button>
-            <ul id="fruitCake" class="drink-list">
-                <li>Strawberry Cake - $4.20</li>
-                <li>Mango Cake - $4.30</li>
-                <li>Mixed Fruit Tart - $4.50</li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<div class="drink-section" id="cookies">
-    <h2>Cookies</h2>
-    <ul>
-        <li>
-            <button onclick="toggleList('chocoCookie')">Chocolate Cookies</button>
-            <ul id="chocoCookie" class="drink-list">
-                <li>Chocolate Chip - $3.00</li>
-                <li>Double Chocolate - $3.50</li>
-                <li>Chocolate Walnut - $3.80</li>
-            </ul>
-        </li>
-        <li>
-            <button onclick="toggleList('classicCookie')">Classic Cookies</button>
-            <ul id="classicCookie" class="drink-list">
-                <li>Oatmeal Raisin - $2.50</li>
-                <li>Peanut Butter - $2.50</li>
-                <li>Sugar Cookie - $2.20</li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<script>
-    function toggleList(id) {
-        const list = document.getElementById(id);
-        if (list.style.display === "block") {
-            list.style.display = "none";
-        } else {
-            list.style.display = "block";
-        }
-    }
-</script>
-
-<h2 id="ccc">
-    DONT FORGET OUR BELOVED BROTHERS IN GAZA<br>
-    AND ALWAYS THINK OF THE INNOCENT CHILDREN
-</h2>
-
+  <a class="skip-link" href="#menu">Skip to menu</a>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">P</span><span>Plastine <small>COFFEE HOUSE</small></span></a>
+    <nav aria-label="Menu categories"><a href="#drinks">Drinks</a><a href="#cakes">Cakes</a><a href="#cookies">Cookies</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">Your moment, freshly made</p><h1 id="hero-title">Good coffee.<br><em>Better company.</em></h1><p>Settle in with a warm cup and something sweet. Explore our favorites below.</p><a class="button" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <div class="intro" id="menu"><p class="eyebrow">Made for every mood</p><h2>Find your favorite</h2><p>From the first sip to the last bite, there is always something to enjoy.</p></div>
+    <div class="menu-grid">
+      <section class="menu-card" id="drinks" aria-labelledby="drinks-title"><img src="2.jpg" alt="Coffee drinks" loading="lazy"><div class="menu-card-content"><span class="card-number">01 / THE BAR</span><h3 id="drinks-title">Drinks</h3><p>Classic coffee and refreshing coolers.</p><details open><summary>Hot drinks</summary><ul><li><span>Espresso</span><span>$2.50</span></li><li><span>Cappuccino</span><span>$3.00</span></li><li><span>Latte</span><span>$3.50</span></li><li><span>Hot Chocolate</span><span>$2.80</span></li></ul></details><details><summary>Cold drinks</summary><ul><li><span>Iced Coffee</span><span>$3.00</span></li><li><span>Lemon Iced Tea</span><span>$2.50</span></li><li><span>Mango Smoothie</span><span>$3.80</span></li><li><span>Cold Brew</span><span>$3.20</span></li></ul></details></div></section>
+      <section class="menu-card" id="cakes" aria-labelledby="cakes-title"><img src="3.jpg" alt="Fresh cake" loading="lazy"><div class="menu-card-content"><span class="card-number">02 / THE BAKERY</span><h3 id="cakes-title">Cakes</h3><p>A slice for the moments worth savoring.</p><details open><summary>Chocolate cakes</summary><ul><li><span>Dark Chocolate Cake</span><span>$4.00</span></li><li><span>Chocolate Fudge</span><span>$4.50</span></li><li><span>Chocolate Mousse</span><span>$4.80</span></li></ul></details><details><summary>Fruit cakes</summary><ul><li><span>Strawberry Cake</span><span>$4.20</span></li><li><span>Mango Cake</span><span>$4.30</span></li><li><span>Mixed Fruit Tart</span><span>$4.50</span></li></ul></details></div></section>
+      <section class="menu-card" id="cookies" aria-labelledby="cookies-title"><img src="4.jpg" alt="Freshly baked cookies" loading="lazy"><div class="menu-card-content"><span class="card-number">03 / SWEET TREATS</span><h3 id="cookies-title">Cookies</h3><p>Little treats with a lot of comfort.</p><details open><summary>Chocolate cookies</summary><ul><li><span>Chocolate Chip</span><span>$3.00</span></li><li><span>Double Chocolate</span><span>$3.50</span></li><li><span>Chocolate Walnut</span><span>$3.80</span></li></ul></details><details><summary>Classic cookies</summary><ul><li><span>Oatmeal Raisin</span><span>$2.50</span></li><li><span>Peanut Butter</span><span>$2.50</span></li><li><span>Sugar Cookie</span><span>$2.20</span></li></ul></details></div></section>
+    </div>
+    <aside class="message"><span aria-hidden="true">✦</span><p>We remember our brothers and sisters in Gaza, and the innocent children.</p></aside>
+  </main>
+  <footer><span>© Plastine Coffee House</span><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>
