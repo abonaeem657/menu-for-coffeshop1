@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+<title id="title">PLASTINE COFFEE</title><desc id="desc">A warm, responsive home for drinks and quiet moments.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#251914"/><stop offset="1" stop-color="#633f31"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".07"/></pattern></defs>
+<rect width="1400" height="420" rx="22" fill="url(#bg)"/><rect width="1400" height="420" rx="22" fill="url(#grid)"/>
+<circle cx="1274" cy="65" r="154" fill="#eac79c" opacity=".07"/><path d="M0 374C341 269 606 432 969 326" fill="none" stroke="#eac79c" stroke-opacity=".18" stroke-width="3"/>
+<rect x="69" y="64" width="12" height="12" rx="3" fill="#eac79c"/><text x="97" y="76" fill="#eac79c" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">A MENU WORTH EXPLORING</text>
+<text x="69" y="174" fill="#ffffff" font-family="Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="-2">PLASTINE COFFEE</text>
+<rect x="71" y="207" width="86" height="5" rx="3" fill="#eac79c"/>
+<text x="71" y="266" fill="#f8e8d0" font-family="Arial,sans-serif" font-size="23">A warm, responsive home for drinks and quiet moments.</text>
+<rect x="69" y="323" width="615" height="52" rx="13" fill="#ffffff" fill-opacity=".09" stroke="#ffffff" stroke-opacity=".14"/>
+<text x="94" y="355" fill="#eac79c" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1">HTML  /  CSS  /  JAVASCRIPT</text>
+<circle cx="1131" cy="215" r="127" fill="#a46d4c" opacity=".34"/><ellipse cx="1130" cy="185" rx="104" ry="30" fill="#f1ddbd"/><path d="M1028 186v100c0 48 204 48 204 0V186" fill="#f1ddbd"/><ellipse cx="1130" cy="185" rx="78" ry="18" fill="#78503d"/><path d="M1230 209c80-13 75 91-4 85" fill="none" stroke="#f1ddbd" stroke-width="22"/><path d="M1090 123c-18-24 19-31 0-55M1135 120c-18-24 19-31 0-55" fill="none" stroke="#eac79c" stroke-opacity=".75" stroke-width="7" stroke-linecap="round"/><ellipse cx="1130" cy="336" rx="143" ry="14" fill="#1b100d" opacity=".35"/>
+</svg>
